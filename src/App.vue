@@ -3,7 +3,7 @@
         <app-Header-Admin v-if="this.$store.getters.getRole == 'admin'"></app-Header-Admin>
         <app-Header-U v-else-if="this.$store.getters.getRole == 'user'"></app-Header-U>
         <app-Header v-else></app-Header>
-       
+
 
                 <!--<h1 v-highlight="'red'">Routing</h1>
                 <p >Hello World</p>
@@ -12,7 +12,7 @@
         <div style="min-height: 541px;">
             <router-view></router-view>
         </div>
-        
+
         <app-Footer-Admin v-if="this.$store.getters.getRole == 'admin'"></app-Footer-Admin>
         <app-Footer-U v-else-if="this.$store.getters.getRole == 'user'"></app-Footer-U>
         <app-Footer v-else></app-Footer>
@@ -35,7 +35,7 @@
                 text:'Hello World',
             }
         },
-     
+
         components:{
             appHeader:Header,
             appFooter:Footer,

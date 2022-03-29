@@ -4,7 +4,7 @@
          <div class="main-container">
             <div class="container">
                 <div class="title">
-                    <h1> Remove Users</h1> 
+                    <h1> Remove Users</h1>
                 </div>
             </div>
             <div class="content">
@@ -23,7 +23,7 @@
                         <tr>
                             <td>Admin</td>
                             <td>Last Name</td>
-                            <td>admin@email.com</td>
+                            <td>admin@gmail.com</td>
                             <td>adminn</td>
                             <td><a href="">Remove</a></td>
                         </tr>
@@ -50,9 +50,9 @@
    color:rgba(182,134,142,0.979);
    letter-spacing: .3em;
    font-size:2.0vw;
-   font-weight: normal; 
+   font-weight: normal;
    text-transform: uppercase;
-   
+
 }
 
  h1 {
@@ -83,7 +83,7 @@ table {
     margin: 50px;
     width: 90%;
 }
-  
+
 th {
     background-color:rgb(182,134,142,0.979);
     color: white;
@@ -94,7 +94,7 @@ td {
     vertical-align: bottom;
 }
 th, td {
-    padding: 5px;  
+    padding: 5px;
 }
 
 
@@ -111,7 +111,7 @@ th, td {
 
 #button:hover{
     background-color: #ecd5d9;
-    
+
 }
 
 

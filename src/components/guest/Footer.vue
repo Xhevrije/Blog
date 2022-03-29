@@ -7,7 +7,7 @@
                     <p>Subscribe to our newsletter</p>
                         <input name="email" type="text" id="email" placeholder="  Please enter your email" required> <br>
                         <input id="submit" type="submit" name="submit" value="Submit" >
-                    </form> 
+                    </form>
                 </div>
 
                 <div class="vi"></div>
@@ -29,7 +29,7 @@
                     </ul>
                 </div>
             </div>
-        </footer> 
+        </footer>
     </div>
 </template>
 
