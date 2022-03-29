@@ -18,16 +18,16 @@
                     <a>Products</a>
                     </router-link>
                 </li>
-                <li class="nav-item" >
+                <!-- <li class="nav-item" >
                     <router-link class="nav-link" to="/user/umenu/skincare" >
                     <a>Skincare</a>
                     </router-link>
-                </li>
-                <li class="nav-item" >
+                </li> -->
+                <!-- <li class="nav-item" >
                     <router-link class="nav-link" to="/user/umenu/makeup" >
                     <a>Makeup</a>
                     </router-link>
-                </li>
+                </li> -->
                 <li class="nav-item" >
                     <router-link class="nav-link" to="/user/umenu/testimonials" >
                     <a>Testimonials</a>
@@ -43,7 +43,6 @@
                     <a>Profile</a>
                     </router-link>
                 </li>
-                
                 </ul>
 
                 <li class="nav-item dropdown"  style="list-style-type: none;" v-if="this.$store.getters.user.loggedIn">

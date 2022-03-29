@@ -89,7 +89,7 @@ export default {
             role = "guest";
           }
 
-          if (["admin@gmail.com"].includes(this.form.email)) {
+          if (["admin@admin.com"].includes(this.form.email)) {
             role = "admin";
           } else {
             role = "user";

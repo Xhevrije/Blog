@@ -20,7 +20,7 @@ export default new Vuex.Store({
                 return 'guest';
             }
 
-            if (['admin@gmail.com'].includes(user.data.email)) {
+            if (['admin@admin.com'].includes(user.data.email)) {
                 return 'admin';
             } else {
                 return 'user';

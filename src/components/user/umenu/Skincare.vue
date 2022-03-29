@@ -9,6 +9,18 @@
          <div class="gallery">
                 <div class="square-container">
                     <div class="side-part">
+
+                        
+                     <a v-for="(post, index) in posts" :key="index"
+                          :href="post.product_link">
+                            <div class="square"><img :src="`http://localhost:4000/posts/${post.image}`"  width="200px" height="200px" ></div>                          
+                        <div class=" justify-content-between pb-4" style="14px; align:right " >
+                        <div class="mb-1 text-muted">Posted: {{post.updated_date | human-date }}   </div>
+                        
+                         </div>
+
+                        </a>
+
                         <a
                             href="https://www.amazon.com/Clinique-Perfecting-Foundation-Concealer-Chamois/dp/B00T6OLHBM/ref=sr_1_3?dchild=1&keywords=foundation&qid=1595624054&sr=8-3">
                             <div class="square"><img src="@/components/user/img/skincaretest.png" width="200px" height="200"
@@ -50,3 +62,28 @@
    </div>
   </div>
 </template>
+
+<script>
+export default {
+    data(){
+        return {
+            posts: [],
+        }
+    },
+
+    methods: {
+        fetchPosts(){
+            this.axios.get('/posts/')
+                .then(response => {
+                    this.posts = response.data;
+                });
+        },
+
+       
+    },
+
+    mounted() {
+        this.fetchPosts();
+    },
+}
+</script>
