@@ -1,7 +1,7 @@
 <template>
     <div class="container my-2">
         <div class="row mb-2">
-            <div class="col-md-6" v-for="(post, index) in posts" :key="index">
+            <div class="col-md-6" v-for="post in reversedItems" :key="post.updated_date">
                 <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                     <div class="col p-4 d-flex flex-column position-static">
                         <h3 class="mb-0" v-text="post.title"></h3>
@@ -31,6 +31,11 @@ export default {
     data(){
         return {
             posts: [],
+        }
+    },
+    computed:{
+        reversedItems(){
+            return this.posts.slice(0).reverse();
         }
     },
 

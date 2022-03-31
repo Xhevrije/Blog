@@ -10,7 +10,7 @@
                 <div class="square-container " >
                     <div class="row row-cols-4 p-3">
               
-                     <a v-for="(post, index) in posts" :key="index"
+                     <a v-for="post in reversedItems" :key="post.updated_date"
                           :href="post.product_link">
                             <div class="square"><img :src="`http://localhost:4000/posts/${post.image}`"  width="200px" height="200px" ></div>                          
                         <div class=" justify-content-between pb-4" style="14px; align:right " >
@@ -55,6 +55,11 @@ export default {
     data(){
         return {
             posts: [],
+        }
+    },
+    computed:{
+        reversedItems(){
+            return this.posts.slice(0).reverse();
         }
     },
 
