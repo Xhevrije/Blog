@@ -75,4 +75,5 @@ computed:{
             height: 250px;
         }
     } */
+    
 </style>

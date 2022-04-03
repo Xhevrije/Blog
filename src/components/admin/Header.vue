@@ -14,6 +14,11 @@
                             </router-link>
                         </li>
                         <li class="nav-item" id="navadmin">
+                    <router-link class="nav-link" to="/user/umenu/products" >
+                    <a>Products</a>
+                    </router-link>
+                </li>
+                        <li class="nav-item" id="navadmin">
                             <router-link class="nav-link" to="/admin/user" >
                             <a>Users</a>
                             </router-link>
@@ -66,9 +71,7 @@ export default {
 
 
 <style lang="css" scoped>
-    .dropdown-toggle{
-        
-    }
+  
     .nav-link {
         color: black;
         font-size: 20px;

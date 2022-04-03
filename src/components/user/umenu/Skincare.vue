@@ -7,8 +7,8 @@
             </div>
         </div>
          <div class="gallery">
-                <div class="square-container">
-                    <div class="side-part">
+               <div class="square-container " >
+                    <div class="row row-cols-4 p-3">
 
                         
                      <a v-for="post in reversedItems" :key="post.updated_date"
@@ -31,8 +31,8 @@
                             href="https://www.amazon.com/TruSkin-Naturals-Vitamin-Topical-Hyaluronic/dp/B01M4MCUAF/ref=sr_1_21?_encoding=UTF8&c=ts&dchild=1&keywords=Facial+Skin+Care+Products&qid=1620733975&s=beauty&sr=1-21&ts_id=11060711">
                             <div class="square"><img src="@/components/user/img/skincare1.png" width="200px" alt="3.png"></div>
                         </a>
-                    </div>
-                     <div class="side-part">
+                    <!-- </div> -->
+                     <!-- <div class="side-part"> -->
                         <a
                             href="https://www.amazon.com/gp/product/B07YLJPMC3?pf_rd_r=0QGE5QKPNH61MPRXFWKH&pf_rd_p=6fc81c8c-2a38-41c6-a68a-f78c79e7253f">
                             <div class="square"><img src="@/components/user/img/skinproduct1.jpg" width="200px" alt="1.png">
