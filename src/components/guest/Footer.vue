@@ -1,4 +1,5 @@
 <template>
+
     <div>
         <footer class="footer-1">
             <div class="footer-content">
@@ -31,6 +32,7 @@
             </div>
         </footer>
     </div>
+    
 </template>
 
 <style lang="css">
