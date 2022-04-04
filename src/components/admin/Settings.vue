@@ -102,7 +102,7 @@
 
 export default {
   name: "Settings",
- 
+
   methods: {
     theme(color) {
         this.setCookie(this.cookieName, color, 1);
@@ -112,6 +112,10 @@ export default {
 };
 </script>
 <style scoped>
+.container{
+ height: 100vh;
+ margin-top: 123px!important ;
+}
 .demo-choose-skin {
     list-style: none;
     padding-left: 0;
