@@ -1,24 +1,40 @@
 <template>
-    <div>
-        <div class="main-container">
-            <div class="container">
-               <div class="title">
-                    <h1> Remove Testimonial</h1>   
+    <div class="container my-5 justify-content-center">
+    <div class=" row justify-content-center ">
+        <div class="col-lg-6 col-12 mt-5 " v-for="(testimonials, index) in testimonials" :key="index">
+            <div class="card mt-3 ">
+                <div class="layer"></div>
+                <div class="content">
+                    <div class="card-header text-center border-0">
+                        <div class="row justify-content-center my-4">
+                            <div class="col">
+                                <div class="d-flex flex-lg-row flex-column-reverse no-gutters justify-content-center">
+                                    <div class="col-3 text-right"><img class="img-fluid" id="quotes" src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" width="110" height="110"></div>
+                                    <div class="col pr-lg-5"><img class=" img-1 mr-lg-5 " src="https://thumbs.dreamstime.com/b/think-positive-neon-lettering-brick-wall-background-166165484.jpg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body text-center pb-3 ">
+                        <div class="row justify-content-center">
+                            <div class="col text-center justify-content-center ">
+                                <p class="bold text-center px-md-3"> {{testimonials.name}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-auto mb-4">
+                    <div class="card-footer text-center border-0 mt-0 pt-0 mb-3">
+                        <div class="row text-center name mt-auto ">
+                            <div class="col">
+                                <h4 class="mb-0 Elizabeth">SMike Housin</h4> <small class="mt-0 text-white">User</small>
+                                <a id="remove" href="" class="btn btn-dark" @click="deleteTest(testimonials._id)">Remove</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="content" v-for="(testimonials, index) in testimonials" :key="index">
-                <section class="quotescontent">
-                  
-                    <div class="bubble">
-                        <blockquote>{{testimonials.name}}</blockquote>
-                        <div class="triangle"></div>
-                        <cite></cite>
-                        <a id="remove" href="" class="btn btn-dark" @click="deleteTest(testimonials._id)">Remove</a>
-                    </div>
-                </section>
-            </div>
         </div>
+    </div>
     </div>
 </template>
 
@@ -58,206 +74,132 @@ export default {
 
 
 <style lang="css" scoped>
-.main-container{
-    height:100vh;
-    background-color: whitesmoke;
-}
-body {
-    margin: 0;
-   padding: 0;
-   height: 100%;
-   font-family: sans-serif;
-}
 
- h1 {
-   width: 100%;
-   text-align: center;
-   margin-top:50px;
-   /* color:rgba(182,134,142,0.979); */
-   letter-spacing: .3em;
-   font-size:3.5vw;
-   font-weight: normal;
-   text-transform: uppercase;
- }
- .content{
-    overflow-y: scroll;
-    height: 300px;
-    width: auto;
-    margin: 30px 100px;
-    background-color: #f7dee3;
-    box-shadow: 0 0 2px 0;
-  
-} 
- .quotes {
-    height: 600px;
-     width: 60%;
-     margin-bottom: 30px;
-     height: auto;
- }
- 
- .bubble blockquote {
-    margin: 40px 40px 0px 40px;
-    background: #fff;
-    padding: 60px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.25em;
-    color:black;
-    width: 500px;
-    height: auto;
+.container-fluid {
+    margin-top: 200px !important;
+
 
 }
-.bubble .triangle {
-    width: 0;
-    height: 0;
-    border-left: 0 solid transparent;
-    border-right: 20px solid transparent;
-    border-top: 20px solid #fff;
-    margin: 0 0 0 60px;
-    margin-bottom: 20px;
-}
-.bubble cite {
-    padding-left: 20px;
-    font-size: 1.45em;
-    color: black;
-}
-.form{
-    margin: 90px 0px 0px 0px;
-}
-#formt{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.container{
+    height: 100vh;
 }
 
-#user, #testimony{
-    width: 300px;
-    padding: 12px;
-    background-color: #ffffff;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    border-radius: 1px;
-}
-#submit{
-    background-color: rgba(182, 134, 142, 0.979);
-    border-radius: 1px;
-    color: black;
-    width: 100px;
-    padding: 12px 20px;
-    cursor: pointer;
-    margin-bottom: 70px; 
-}
-#remove{
-    float: right;
-    margin-right: 30px;
+p {
     font-size: 20px;
-    color:black;
-    background-color: white;
-    padding: 7px;
-    border-radius: 10px;
+    line-height: 33px !important;
+    color: #fff
 }
-@media only screen and (max-width: 1024px){
-    body {
-        margin: 0;
-       padding: 0;
-       height: 100%;
-        font-family: sans-serif;
-       background: #ecd5d9
-     }
-    
-     h1 {
-       width: 100%;
-       text-align: center;
-       margin-top:50px;
-       color:rgba(182,134,142,0.979);
-       letter-spacing: .3em;
-       font-size:3.5vw;
-       font-weight: normal;
-       text-transform: uppercase;
-       
-     }
-     .content{
-        overflow-y: scroll;
-        height: 600px;
-        width: auto;
-        margin: 30px 50px;
-        background-color: #f7dee3;
-        box-shadow: 0 0 2px 0;
-      
-    } 
-     .quotes {
-        height: 600px;
-         width: 100%;
-         margin: 20px auto;
-         height: auto;
-     }
-     
-     .bubble blockquote {
-        margin: 65px 25px 0px 25px;
-        background: #fff;
-        padding: 40px;
-        border: none;
-        border-radius: 8px;
-        font-size: 15px;
-        color:black;
-        width: auto;
-        height: auto;
-    
+
+.small {
+    letter-spacing: 0.5px !important
+}
+
+.card {
+    box-shadow: 0px 5px 16px rgba(223, 241, 223, 0.5);
+    transition: 0.8s;
+    background: #333;
+    ;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 7px !important
+}
+
+.card-header,
+.card-footer {
+    border-radius: 7px !important
+}
+
+.card:after {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    z-index: 9999;
+    height: 100%;
+    pointer-events: none
+}
+
+.card-title img {
+    z-index: 99999 !important
+}
+
+.card .layer {
+    position: absolute;
+    top: calc(100% - 5px);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    left: 0;
+    z-index: 1;
+    transition: 0.5s
+}
+
+.card:hover {
+    box-shadow: -5px 50px 100px rgba(223, 241, 223, 0.5)
+}
+
+.card:hover hr {
+    background-color: #fff
+}
+
+.card:hover h4 {
+    font-weight: 600
+}
+
+.card:hover p {
+    font-weight: 600
+}
+
+.card:hover small {
+    font-weight: 600
+}
+
+.card:hover .layer {
+    top: 0
+}
+
+.card .content {
+    position: relative;
+    z-index: 2
+}
+
+.card .content .img-1 {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white !important
+}
+
+.card h4 {
+    color: #fff;
+    font-weight: 500
+}
+
+hr {
+    background-color: rgb(117, 117, 117);
+    width: 80% !important;
+    transition: 1s
+}
+
+.bold {
+    font-weight: 500
+}
+
+#quotes {
+    opacity: 0.1;
+    filter: alpha(opacity=40)
+}
+
+@media (max-width: 479px) {
+    p {
+        padding: 0 !important
     }
-    .bubble .triangle {
-        width: 0;
-        height: 0;
-        border-left: 0 solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #fff;
-        margin: 0 0 0 60px;
-        margin-bottom: 20px;
+
+    .img-1 {
+        margin-right: 0 !important
     }
-    .bubble cite {
-        padding-left: 20px;
-        font-size: 15px;
-        color: black;
-    }
-    .form{
-        margin: 90px 0px 0px 0px;
-    }
-    #formt{
-        margin: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    
-    #user, #testimony{
-        width: 300px;
-        padding: 12px;
-        background-color: #ffffff;
-        margin-top: 6px;
-        margin-bottom: 16px;
-        resize: vertical;
-        border-radius: 1px;
-    }
-    #submit{
-        background-color: rgba(182, 134, 142, 0.979);
-        border-radius: 1px;
-        color: black;
-        width: 100px;
-        padding: 12px 20px;
-        cursor: pointer;
-        margin-bottom: 70px; 
-    }
-    #remove{
-        float: right;
-        margin-right: 30px;
-        font-size: 15px;
-        color:black;
-        background-color: white;
-        padding: 7px;
-        border-radius: 10px;
-    } 
 }
 </style>

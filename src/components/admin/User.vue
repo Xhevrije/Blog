@@ -1,4 +1,3 @@
-@@ -0,0 +1,125 @@
 <template>
     <div>
          <div class="main-container">
@@ -70,6 +69,7 @@
     font-size: 1vmax;
     background-color: whitesmoke;
     height: 100vh;
+    margin-top: 107px;
 }
 .content{
     display: flex;

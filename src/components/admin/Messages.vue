@@ -6,7 +6,7 @@
                 <table class="table table-hover table-nowrap">
                 <thead class="thead-light">
                     <tr>
-                   
+
                     <th scope="col">Name</th>
                     <th scope="col">Email</th>
                     <th scope="col">Description</th>
@@ -14,7 +14,7 @@
                     </tr>
                 </thead>
                 <tbody class="" v-for="(contacts, index) in contacts" :key="index">
-                
+
                     <tr>
                     <td data-label="Name">
                         {{contacts.name}}
@@ -26,7 +26,7 @@
                         <span> {{contacts.description}}</span>
                     </td>
                     <td>
-                      
+
                       <button type="button" class="btn btn-danger" @click="deleteTest(contacts._id)">Delete</button>
                       </td>
                 </tr>
@@ -69,3 +69,9 @@ export default {
     },
 }
 </script>
+<style scoped>
+.container{
+    margin-top:123px;
+    height:100vh;
+}
+</style>
