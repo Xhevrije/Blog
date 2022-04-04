@@ -4,12 +4,13 @@ import store from './store';
 const settings = { timestampsInSnapshots: true };
 
 const config = {
-    apiKey: "AIzaSyAtpmSGTsksuq4bLsQLY_8j8HdWmt8dc_U",
-    authDomain: "projekti2021-f2abb.firebaseapp.com",
-    projectId: "projekti2021-f2abb",
-    storageBucket: "projekti2021-f2abb.appspot.com",
-    messagingSenderId: "834980427190",
-    appId: "1:834980427190:web:562f76c6475445efccbd17"
+
+  apiKey: "AIzaSyD54t-ZBG92hGwBWLp52k093-TyDji3-h8",
+  authDomain: "blog-b66c2.firebaseapp.com",
+  projectId: "blog-b66c2",
+  storageBucket: "blog-b66c2.appspot.com",
+  messagingSenderId: "540907029775",
+  appId: "1:540907029775:web:0a52c4fbcc1d04a4016a7a"
 };
 firebase.initializeApp(config);
 

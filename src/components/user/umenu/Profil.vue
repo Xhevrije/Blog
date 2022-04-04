@@ -3,7 +3,7 @@
         <div class="container mt-5 d-flex justify-content-center">
             <div class="card p-3">
                 <div class="d-flex align-items-center">
-                    <div class="image"> <img src="https://scontent.fprn4-1.fna.fbcdn.net/v/t39.30808-1/277164140_143520111501404_5553718570411315467_n.jpg?stp=dst-jpg_p320x320&_nc_cat=105&ccb=1-5&_nc_sid=7206a8&_nc_ohc=I8AUcR01omQAX9hlrcj&_nc_ht=scontent.fprn4-1.fna&oh=00_AT_tqe_tFCSyMuj-z4pVN3Z5b13d0TUpV37N3uoLOkgIzA&oe=62481254" class="rounded" width="155"> </div>
+                    <div class="image"> <img src="https://wallpapercave.com/wp/wp7810667.jpg" class="rounded" width="155"> </div>
                     <div class="ml-3 w-100" v-if="this.$store.getters.user.data">
                         <h4 class="mb-0 mt-0 p-2">Name: {{this.$store.getters.user.data.displayName}}</h4>
                         <h4 class="mb-0 mt-0 p-2">Email: {{this.$store.getters.user.data.email}}</h4>
