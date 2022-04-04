@@ -27,4 +27,5 @@ firebase.getCurrentUser = () => {
         }, reject);
     });
 }
+
 export default firebase;
