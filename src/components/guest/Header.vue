@@ -3,7 +3,7 @@
         <nav
     class="navbar navbar-expand-lg navbar-dark fixed-top"
     id="mainNav"
-    :style="'background-color:   ' + this.getCookie(this.cookieName)"
+    style="background-color:rgb(169 134 141)"
   >
     <div class="container">
       <a class="navbar-brand" href="#page-top">
@@ -23,8 +23,8 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0 ">
                 <li class="nav-item" >
-                    <router-link class="nav-link" to="/guest/menu/home" >
-                    <a>Home</a>
+                    <router-link class="nav-link " to="/guest/menu/home" >
+                    <a class="">Home</a>
                     </router-link>
                 </li>
                 <li class="nav-item" >
@@ -55,7 +55,7 @@
   margin-right: 0 !important;
   padding: 0px 25px !important;
   text-decoration: none;
-  color: black  !important;
+  color: white  !important;
 }
 .dropdown-toggle {
   color: rgb(0, 0, 0);

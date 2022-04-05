@@ -7,12 +7,12 @@
                     the beauty world.<br>Makeup reviews, tutorials, beauty tips & so much more.</p>
                     <p class="paragraf">Log in or sign in to get started</p>
             </div>
-        </div>          
+        </div>
         <div class="cta">
             <router-link class="nav-link" to="/auth/register" >
                 <button class="cta-select" onclick="">Sign Up</button>
             </router-link>
-        
+
             <router-link class="nav-link" to="/auth/login" >
                 <button class="cta-add" onclick="">Log In</button>
             </router-link>
@@ -28,8 +28,11 @@
     .cta {
         display: flex;
         width: 50%;
-    }
 
+    }
+.introduction{
+    height: 100vh!important;
+}
     .cta .nav-link{
         margin: 0;
     }
