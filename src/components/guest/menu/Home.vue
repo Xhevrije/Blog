@@ -7,7 +7,7 @@
                     the beauty world.<br>Makeup reviews, tutorials, beauty tips & so much more.</p>
                     <div class="btn">
                     <button class="login mb-4"><router-link :to="'/auth/login'" >Login</router-link></button>
-                <button class="register mb-4"><router-link :to="'/auth/register'" >Register</router-link></button>
+                    <button class="register mb-4"><router-link :to="'/auth/register'" >Register</router-link></button>
             </div>
             </div>
         </div>
@@ -20,6 +20,7 @@
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
 }
 .home{
     height: 100vh;
@@ -30,10 +31,14 @@
 .login{
     padding: 8px 37px 8px 37px;
     margin-left: 5px;
+    background-color: rgb(169, 134, 141);
+    border-radius: 50px ;
 }
 .register{
     padding: 8px 28px 8px 28px;
     margin-left: 5px;
+    background-color: rgb(169, 134, 141);
+    border-radius: 50px ;
 }
 </style>
 

@@ -1,10 +1,10 @@
 <template>
       <div class="container">
             <div class="title">
-                <h3> Take a look about what our guests have been saying about us</h3> 
+                <h3> Take a look about what our guests have been saying about us</h3>
             </div>
             <div class="content" >
-              
+
                     <div class="review" v-for="(testimonials, index) in testimonials" :key="index" >
                         <div class="head-review">
                             <img src="@/components/guest/img/profile.jpg" width="250px" alt="">
@@ -25,11 +25,11 @@
                             </div>
                         </div>
                     </div>
-             
-                   
+
+
                 </div>
         </div>
-    
+
 
 </template>
 
