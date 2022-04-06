@@ -120,6 +120,7 @@ export default {
   box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
 }
 
+
 .logo {
   width: 80px;
   margin: auto;
