@@ -1,12 +1,13 @@
 <template>
-  <nav
-    class="navbar navbar-expand-lg navbar-dark fixed-top"
+<!-- + this.getCookie(this.cookieName)" -->
+   <nav
+    class="navbar navbar-expand-lg navbar-dark "
     id="mainNav"
-    :style="'background-color:   ' + this.getCookie(this.cookieName)"
+    style="background-color:rgb(169 134 141)"
   >
-    <div class="container">
-      <a class="navbar-brand" href="#page-top">
-        <img src="./img/logo.png" style="width:90px; height:80px; " />
+            <div class="container">
+ <a class="navbar-brand" href="#page-top">
+        <img src="./img/logo.png"  style="width:90px; height:80px; " />
       </a>
       <button
         class="navbar-toggler"
