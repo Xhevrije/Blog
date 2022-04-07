@@ -22,6 +22,12 @@ body {
   background: rgba(182, 134, 142, 0.979);
   color: blanchedalmond;
 }
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .blog {
   margin-right: 290px;
@@ -36,6 +42,20 @@ body {
   border: 1px solid #ecd5d9;
 }
 
+
+
+#fname,
+#emailc,
+textarea {
+    width: 650px;
+    padding: 12px;
+    background-color: #f2f3f4;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 10px;
+}
+
 h1 {
   font-size: 70px;
   color: rgb(19, 18, 18);
@@ -48,6 +68,7 @@ h1 {
 .paragrafi {
   margin-right: 74%;
 }
+
 
 .paragraf {
   font-weight: 500;
@@ -111,6 +132,35 @@ h1 {
 input {
   border-radius: 20px 20px 20px 20px;
   padding-left: 1rem;
+}
+
+
+input[type="file"] {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: white;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#submit {
+  background-color: rgba(182, 134, 142, 0.979);
+  border-radius: 1px;
+  color: black;
+  width: 100px;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 27%;
+  border-radius: 10px;
+
+}
+
+#submit:hover {
+  background-color: white;
 }
 
 .subscribe {

@@ -12,7 +12,7 @@ const contacts = require('./routes/contacts');
 
 
 mongoose.Promise = global.Promise;
-mongoose.connect(config.DB);
+mongoose.connect(config.DB,{ useNewUrlParser: true,useUnifiedTopology: true });
 
 const app = express();
 app.use(express.static('images'));

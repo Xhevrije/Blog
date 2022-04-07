@@ -1,8 +1,14 @@
 <template>
     <div>
-        <nav class="adminpanel navbar navbar-expand-lg navbar-light ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"></a>
+       <nav
+    class="navbar navbar-expand-lg navbar-dark "
+    id="mainNav"
+    style="background-color:rgb(169 134 141)"
+  >
+            <div class="container">
+ <a class="navbar-brand" href="#page-top">
+        <img src="./img/logo.png"  style="width:90px; height:80px; " />
+      </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
