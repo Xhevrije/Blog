@@ -1,7 +1,7 @@
 <template>
     <div>
         <nav
-    class="navbar navbar-expand-lg navbar-dark fixed-top"
+    class="navbar navbar-expand-lg navbar-dark "
     id="mainNav"
     style="background-color:rgb(169 134 141)"
   >
