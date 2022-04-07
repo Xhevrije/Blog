@@ -109,6 +109,9 @@ export default {
   width: 95px;
   text-align: center;
 }
+#imagepath{
+  width: 228px;
+}
 #submit:hover{
   background-color: rgb(183, 136, 144);
 }

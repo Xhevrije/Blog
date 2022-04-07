@@ -1,35 +1,17 @@
 <template>
-      <div class="container">
-            <div class="title">
-                <h3> Take a look about what our guests have been saying about us</h3>
-            </div>
-            <div class="content" >
-
-                    <div class="review" v-for="(testimonials, index) in testimonials" :key="index" >
-                        <div class="head-review">
-                            <img src="@/components/guest/img/profile.jpg" width="250px" alt="">
-                        </div>
-                        <div class="body-review">
-                            <div class="name-review" >Jane Doe</div>
-                            <!-- <div class="place-review">Lorem Ipsum</div> -->
-                            <div class="rating">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="desc-review">
-                            <p class="bold text-center px-md-3"> {{testimonials.name}}</p>
-
-                            </div>
-                        </div>
-                    </div>
+     <div class="container">
+          <div class="card-deck row">
+              <div class="card " v-for="(testimonials, index) in testimonials" :key="index" >
+                  <img class="card-img-top img-fluid" src="@/components/guest/img/profile.jpg" >
+                  <div class="card-body">
+                      <h4 class="card-title">{{testimonials.user}}</h4>
+                      <p class="card-text">{{testimonials.name}}</p>
+                  </div>
+              </div>
+          </div>
 
 
-                </div>
-        </div>
-
+      </div>
 
 </template>
 
@@ -67,7 +49,7 @@ export default {
 }
 </script>
 <style scoped>
-.review {
- margin: 10px;
+.container {
+ margin-top: 123px;
 }
 </style>

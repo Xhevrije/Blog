@@ -3,7 +3,6 @@ import AddPost from '@/components/admin/posts/AddPost';
 import EditPost from '@/components/admin/posts/EditPost';
 import TestimonialsAdmin from '@/components/admin/TestimonialsAdmin';
 import Messages from '@/components/admin/Messages';
-import User from '@/components/admin/User';
 import RemovePost from '@/components/admin/posts/RemovePost';
 import About from '@/components/guest/menu/About';
 import Contact from '@/components/guest/menu/Contact';
@@ -34,7 +33,6 @@ export default new VueRouter({
         { path: '/admin/posts/edit/:id', name: 'editpost', component: EditPost },
         { path: '/admin/testimonials/', name: 'testimonialsadmin', component: TestimonialsAdmin },
         { path: '/admin/messages/', name: 'messages', component: Messages },
-        { path: '/admin/user/', name: 'user', component: User },
         { path: '/admin/posts/removepost', name: 'removepost', component: RemovePost },
         { path: '/guest/menu/about', name: 'about', component: About },
         { path: '/guest/menu/contact', name: 'contact', component: Contact },

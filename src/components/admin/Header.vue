@@ -1,7 +1,7 @@
 <template>
 <!-- + this.getCookie(this.cookieName)" -->
    <nav
-    class="navbar navbar-expand-lg navbar-dark "
+    class="navbar navbar-expand-lg navbar-dark fixed-top"
     id="mainNav"
     style="background-color:rgb(169 134 141)"
   >
@@ -30,11 +30,6 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/admin/posts/addpost">
               <a>Add Post</a>
-            </router-link>
-          </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/admin/user">
-              <a>Users</a>
             </router-link>
           </li>
           <li class="nav-item">
