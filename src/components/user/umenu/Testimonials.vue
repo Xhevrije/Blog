@@ -52,3 +52,65 @@ export default {
     },
 }
 </script>
+
+<style>
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+
+
+#fname, #emailc, textarea {
+    width: 650px;
+    padding: 12px;
+    background-color: #f2f3f4;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+#fname,
+#emailc,
+textarea {
+    width: 650px;
+    padding: 12px;
+    background-color: #f2f3f4;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#submit {
+    background-color: rgba(182, 134, 142, 0.979);
+    border-radius: 1px;
+    color: black;
+    width: 100px;
+    padding: 8px;
+    cursor: pointer;
+    margin-bottom: 27%;
+}
+
+#submit:hover {
+    background-color: white;
+}
+
+
+</style>
