@@ -1,5 +1,5 @@
 <template>
-<div class="admin">
+<div class="user">
     <div class="container my-2">
         <div class="row mb-2">
             <div class="col-md-6 p-4" v-for="post in reversedItems" :key="post.updated_date">
@@ -15,7 +15,7 @@
                     </div>
                     <div class="d-flex p-3 justify-content-between">
                         <div class="mb-1 text-muted">Posted: {{post.updated_date | human-date}}</div>
-                       
+
                     </div>
                 </div>
             </div>
@@ -64,10 +64,12 @@ export default {
 
 
 <style scoped>
+.user{
+    margin-top: 123px!important;
+    min-height: 100vh;
+}
 .shadow-sm{
     background-color:#dfd8dc ;
 }
-.admin{
-    margin-top: 123px;
-}
+
 </style>
