@@ -55,7 +55,8 @@
   margin-right: 0 !important;
   padding: 0px 25px !important;
   text-decoration: none;
-  color: white  !important;
+  color: rgb(0, 0, 0)  !important;
+
 }
 .dropdown-toggle {
   color: rgb(0, 0, 0);

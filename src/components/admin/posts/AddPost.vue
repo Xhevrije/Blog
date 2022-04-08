@@ -17,7 +17,7 @@
                     </div>
                     <div class="col-12">
                       <label for="">DESCRIPTION: </label> <br>
-                      <textarea  id="text" style="width:501px" name="text" cols="30" rows="5" required v-model="description"></textarea>
+                      <textarea  id="text"  name="text" cols="30" rows="5" required v-model="description"></textarea>
                     </div>
                     <div class="col-md-6">
                       <label for="">DESIGN: </label> <br>

@@ -67,12 +67,3 @@ export default {
 }
 </script>
 
-
-<style scoped>
-.shadow-sm{
-    background-color:#dfd8dc ;
-}
-.admin{
-    margin-top: 123px;
-}
-</style>

@@ -1,4 +1,5 @@
 <template>
+<div class="container">
   <div class="wrapper">
     <!-- Linku per icons -->
     <link
@@ -16,7 +17,7 @@
     <div v-if="error" class="alert alert-danger">{{ error }}</div>
     <form action="#" @submit.prevent="submit" class="p-3 mt-3">
       <div class="form-field d-flex align-items-center">
-        <span class="fa fa-user"></span>
+        <i class="fa fa-user"></i>
         <label
           for="text"
           name="userName"
@@ -61,9 +62,10 @@
       </p>
     </form>
   </div>
+  </div>
 </template>
 
-  <script>
+<script>
 /* eslint-disable*/
 import firebase from "firebase";
 
@@ -109,93 +111,9 @@ export default {
 };
 </script>
 
-  <style lang="css" scoped>
-.wrapper {
-  max-width: 350px;
-  min-height: 500px;
-  margin: 80px auto;
-  padding: 40px 30px 30px 30px;
-  background-color: #ecf0f3;
-  border-radius: 15px;
-  box-shadow: 13px 13px 20px #cbced1, -13px -13px 20px #fff;
-}
-
-
-.logo {
-  width: 80px;
-  margin: auto;
-}
-
-.logo img {
-  width: 100%;
-  height: 69px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0px 0px 3px #5f5f5f, 0px 0px 0px 5px #ecf0f3, 8px 8px 15px #a7aaa7,
-    -8px -8px 15px #fff;
-}
-
-.wrapper .name {
-  font-weight: 600;
-  font-size: 1.4rem;
-  letter-spacing: 1.3px;
-  padding-left: 10px;
-  color: #555;
-}
-
-.wrapper .form-field input {
-  width: 92%;
-  display: block;
-  border: none;
-  outline: none;
-  background: none;
-  font-size: 1.2rem;
-  color: #666;
-  padding: 10px 15px 10px 10px;
-}
-
-.wrapper .form-field {
-  padding-left: 10px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
-}
-
-.wrapper .form-field .fas {
-  color: #555;
-}
-
-.wrapper .btn {
-  box-shadow: none;
-  width: 100%;
-  height: 40px;
-  background-color: #7a7c7e;
-  color: #fff;
-  border-radius: 25px;
-  box-shadow: 3px 3px 3px #b1b1b1, -3px -3px 3px #fff;
-  letter-spacing: 1.3px;
-}
-
-.wrapper .btn:hover {
-  background-color: #d989b6;
-}
-
-.wrapper a {
-  text-decoration: none;
-  font-size: 0.8rem;
-  color: #686868;
-}
-
-.wrapper a:hover {
-  color: #d989b6;
-}
-.message {
-  font-size: 15px;
-}
-@media (max-width: 380px) {
-  .wrapper {
-    margin: 30px 20px;
-    padding: 40px 15px 15px 15px;
-  }
+<style scoped>
+.container{
+  min-height: 100vh;
+  margin-top: 149px;
 }
 </style>

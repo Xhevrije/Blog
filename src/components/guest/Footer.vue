@@ -1,7 +1,13 @@
 <template>
+
   <!-- Footer -->
   <div class=" text-center text-white mb-4" style="background-color:rgb(169 134 141)">
     <!-- Grid container -->
+    <!-- Linku per icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <div class="container p-4">
       <section class="">
         <!--Grid row-->
@@ -40,39 +46,20 @@
             <ul class="list-unstyled mb-0">
               <li>
                 <a href="https://www.instagram.com"
-                  ><img
-                    src="@/components/guest/img/instagram.png"
-                    alt=""
-                    width="30"
-                    height="30"
-                /></a>
+                  >
+                  <span class="fa fa-instagram "></span></a>
               </li>
               <li>
                 <a href="https://www.facebook.com"
-                  ><img
-                    src="@/components/guest/img/facebook.png"
-                    alt=""
-                    width="30"
-                    height="30"
-                /></a>
+                  ><span class="fa fa-facebook "></span></a>
               </li>
               <li>
-                <a href="https://www.facebook.com"
-                  ><img
-                    src="@/components/guest/img/instagram.png"
-                    alt=""
-                    width="30"
-                    height="30"
-                /></a>
+                <a href="https://github.com/Xhevrije/Blog"
+                  ><span class="fa fa-github "></span></a>
               </li>
               <li>
                 <a href="https://www.youtube.com"
-                  ><img
-                    src="@/components/guest/img/youtube.png"
-                    alt=""
-                    width="30"
-                    height="30"
-                /></a>
+                  ><span class="fa fa-youtube "></span></a>
               </li>
             </ul>
           </div>
@@ -98,5 +85,11 @@ export default {
 li {
   padding-bottom: 10px;
 }
-
+.fa{
+  color: white;
+ font-size: 20px;
+}
+.fa:hover{
+  color: rgb(0, 0, 0);
+}
 </style>

@@ -4,6 +4,7 @@
     class="navbar navbar-expand-lg navbar-dark fixed-top"
     id="mainNav"
     style="background-color:rgb(169 134 141)"
+    :style="'background-color: '+this.getCookie(this.cookieName)"
   >
             <div class="container">
  <a class="navbar-brand" href="#page-top">

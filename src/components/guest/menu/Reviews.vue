@@ -1,20 +1,13 @@
 <template>
-     <div class="container">
-          <div class="card-deck row">
-              <div class="card " v-for="(testimonials, index) in testimonials" :key="index" >
-                  <img class="card-img-top img-fluid" src="@/components/guest/img/profile.jpg" >
-                  <div class="card-body">
-                      <h4 class="card-title">{{testimonials.user}}</h4>
-                      <p class="card-text">{{testimonials.name}}</p>
-                  </div>
-              </div>
-          </div>
-
-
+     <div class="card-columns">
+    <div class="card " style="background-color:rgb(169 134 141 / 28%)" v-for="(testimonials, index) in testimonials" :key="index">
+      <div class="card-body text-center">
+          <img class="card-img-top" src="@/components/guest/img/profile.jpg" style="width: 150px" alt="Card image">
+        <p class="card-text">{{testimonials.name}}</p>
       </div>
-
+    </div>
+  </div>
 </template>
-
 <script>
 
 export default {
@@ -49,7 +42,11 @@ export default {
 }
 </script>
 <style scoped>
-.container {
+.card-columns {
  margin-top: 123px;
+}
+.card-text{
+    font-weight: 700;
+    font-size: 20px;
 }
 </style>

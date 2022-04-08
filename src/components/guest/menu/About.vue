@@ -1,41 +1,98 @@
 <template>
-    <div class="containerA">
+<div class="container">
+    <div class="about-section">
+  <h1>About Us Page</h1>
+  <p>Some text about who we are and what we do.</p>
+  <p>Resize the browser window to see that this page is responsive by the way.</p>
+</div>
 
-            <div class="contentA">
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="@/components/guest/img/profile1.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Edona Jemini</h2>
+        <p class="title">Web Developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>ej50024@ubt-uni.net</p>
+      </div>
+    </div>
+  </div>
 
-                <h2>About Our Blog</h2>
+  <div class="column">
+    <div class="card">
+      <img src="@/components/guest/img/profile2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Gëzim Dallku</h2>
+        <p class="title">Backend developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>gd47735@unt-uni.net</p>
+      </div>
+    </div>
+  </div>
 
-                <div class="story">
-                    <br>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati cupiditate corrupti excepturi
-                        dolores
-                        aspernatur, neque rem accusamus quam animi voluptates recusandae cumque nulla dicta nisi, autem
-                        quasi
-                        porro. Corrupti rem impedit placeat consequatur aperiam eligendi incidunt a sequi nisi animi,
-                        eius
-                        in
-                        non veritatis omnis aliquid labore ab! Quas accusantium odio ipsam eius facilis tenetur maxime
-                        assumenda
-                        laborum ducimus laboriosam odit ratione quisquam quam debitis, porro inventore voluptatem magni
-                        non veritatis omnis aliquid labore ab! Quas accusantium odio ipsam eius facilis tenetur maxime
-                        assumenda
-                        laborum ducimus laboriosam odit ratione quisquam quam debitis, porro inventore voluptatem magni
-                        </p>
-
-                    <h6> FOUNDED BY: </h6>
-
-                    <div class="founders">
-                        <img id="founder" src="@/components/guest/img/mu.jpg" alt="founder1">
-                        <img id="founder" src="@/components/guest/img/mu2.jpg" alt="founder2">
-                        <img id="founder" src="@/components/guest/img/mu.jpg" alt="founder3">
-                        <img id="founder" src="@/components/guest/img/mu2.jpg" alt="founder4">
-                    </div>
-                </div>
-            </div>
-          </div>
+  <div class="column">
+    <div class="card">
+      <img src="@/components/guest/img/profile3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Xhevrije Neziri</h2>
+        <p class="title">Backend developer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>xn49665@ubt-uni.net</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 </template>
 <style scoped>
-.containerA{
-    margin-top: 123px;
+.container{
+    margin-top:123px ;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 #bdb6b6;
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #818080;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+  font-size: 20px;
+}
+
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
 </style>
