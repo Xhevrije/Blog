@@ -1,6 +1,6 @@
 <template>
      <div class="card-columns">
-    <div class="card " style="background-color:rgb(169 134 141 / 28%)" v-for="(testimonials, index) in testimonials" :key="index">
+    <div class="card " style="background-color:rgb(169 134 141 / 28%)"  v-for="testimonials in reversedItems" :key="testimonials.name">
       <div class="card-body text-center">
           <img class="card-img-top" src="@/components/guest/img/profile.jpg" style="width: 150px" alt="Card image">
         <p class="card-text">{{testimonials.name}}</p>
@@ -16,6 +16,12 @@ export default {
             testimonials: [],
         }
     },
+     computed:{
+        reversedItems(){
+            return this.testimonials.slice(0).reverse();
+        }
+    },
+
 
     methods: {
         fetchTest(){

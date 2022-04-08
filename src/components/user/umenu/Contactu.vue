@@ -10,7 +10,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-7">
-                        <form action="/" class="mb-4 mb-lg-0">
+                        <form  @submit="onSubmit" class="mb-4 mb-lg-0">
                             <div class="form-row">
                                 <div class="col-md-12 form-group ">
                                     <input type="text" class="form-control" placeholder="Your Name" v-model="contacts.name">

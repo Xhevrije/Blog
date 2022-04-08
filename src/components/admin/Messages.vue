@@ -13,7 +13,7 @@
                      <th scope="col">Actions</th>
                     </tr>
                 </thead>
-                <tbody class="" v-for="(contacts, index) in contacts" :key="index">
+                <tbody class="" v-for="contacts in reversedItems" :key="contacts.name">
 
                     <tr>
                     <td data-label="Name">
@@ -45,6 +45,12 @@ export default {
             contacts: [],
         }
     },
+    computed:{
+        reversedItems(){
+            return this.contacts.slice(0).reverse();
+        }
+    },
+
 
     methods: {
         fetchPosts(){

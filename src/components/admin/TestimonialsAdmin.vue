@@ -3,8 +3,7 @@
     <div class=" row justify-content-center ">
       <div
         class="col-lg-6 col-12 mt-5 "
-        v-for="(testimonials, index) in testimonials"
-        :key="index"
+        v-for="testimonials in reversedItems" :key="testimonials.name"
       >
         <div class="card mt-3 ">
           <div class="layer"></div>
@@ -47,8 +46,8 @@
             <div class="card-footer text-center border-0 mt-0 pt-0 mb-3">
               <div class="row text-center name mt-auto ">
                 <div class="col">
-                  <h4 class="mb-0 Elizabeth">SMike Housin</h4>
-                  <small class="mt-0 text-white">User</small>
+                  <!-- <h4 class="mb-0 Elizabeth">Us</h4> -->
+                  <h4 class="mt-0 text-white">User</h4>
                   <a
                     id="remove"
                     href=""
@@ -73,6 +72,11 @@ export default {
       testimonials: [],
     };
   },
+  computed:{
+        reversedItems(){
+            return this.testimonials.slice(0).reverse();
+        }
+    },
 
   methods: {
     fetchTest() {
