@@ -99,7 +99,7 @@ export default {
 <style scoped>
 .container{
   margin-top: 123px!important;
-  height:100vh;
+  min-height:100vh;
 }
 #submit{
   float: right;
@@ -117,5 +117,9 @@ export default {
 }
 #Add-post{
   background-color: #dfd8dc !important;
+}
+#fname, #emailc, textarea {
+  width: 515px;
+
 }
 </style>

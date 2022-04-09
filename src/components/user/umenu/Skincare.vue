@@ -10,13 +10,13 @@
                <div class="square-container " >
                     <div class="row row-cols-4 p-3">
 
-                        
+
                      <a v-for="post in reversedItems" :key="post.updated_date"
                           :href="post.product_link">
-                            <div class="square"><img :src="`http://localhost:4000/posts/${post.image}`"  width="200px" height="200px" ></div>                          
+                            <div class="square"><img :src="`http://localhost:4000/posts/${post.image}`"  width="200px" height="200px" ></div>
                         <div class=" justify-content-between pb-4" style="14px; align:right " >
                         <div class="mb-1 text-muted">Posted: {{post.updated_date | human-date }}   </div>
-                        
+
                          </div>
 
                         </a>
@@ -56,9 +56,9 @@
                             </div>
                         </a>
                 </div>
-                   
-                </div>        
-   
+
+                </div>
+
    </div>
   </div>
 </template>
@@ -84,7 +84,7 @@ export default {
                 });
         },
 
-       
+
     },
 
     mounted() {
@@ -92,3 +92,9 @@ export default {
     },
 }
 </script>
+<style scoped>
+.row{
+    margin-right : 163px;
+    margin-left : 177px;
+}
+</style>
